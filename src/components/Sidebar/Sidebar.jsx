@@ -1,4 +1,5 @@
 import StyleAside from './Sidebar.module.css'
+import {RiEdit2Line} from 'react-icons/ri'
 
 export function Sidebar(){
     return(
@@ -16,7 +17,10 @@ export function Sidebar(){
             </div>
 
             <footer>
-                <a href="#">Editar seu perfil</a>
+                <a href="#">
+                    <RiEdit2Line size={20}/>
+                    Editar seu perfil
+                </a>
             </footer>
         </aside>
     )
