@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Header } from './components/Header/Header'
 
 import StyleApp from './App.module.css'
+import { Sidebar } from './components/Sidebar/Sidebar'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,9 +11,7 @@ function App() {
     <div>
       <Header/>
       <div className={StyleApp.wrapper}>
-        <aside>
-          sidebar
-        </aside>
+        <Sidebar/>
         <main>
           post
         </main>
