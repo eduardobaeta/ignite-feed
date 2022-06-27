@@ -1,19 +1,21 @@
 import { useState } from 'react'
 import { Header } from './components/Header/Header'
 
-import StyleApp from './App.module.css'
+import Styles from './App.module.css'
 import { Sidebar } from './components/Sidebar/Sidebar'
+import { Post } from './components/Post/Post'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div>
-      <Header/>
-      <div className={StyleApp.wrapper}>
-        <Sidebar/>
+      <Header />
+      <div className={Styles.wrapper}>
+        <Sidebar />
         <main>
-          post
+          <Post />
+          <Post />
         </main>
       </div>
     </div>
